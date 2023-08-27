@@ -1,0 +1,7 @@
+query MyQuery($skip: Int = 10) {
+  blog_findManypost(take: 10, skip: $skip) {
+    id
+    content
+    cate
+  }
+}

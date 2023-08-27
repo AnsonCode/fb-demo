@@ -1,0 +1,6 @@
+query MyQuery {
+  rb_findManyT(where: {des: {equals: null}}) {
+    des
+    id
+  }
+}

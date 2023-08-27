@@ -1,0 +1,7 @@
+mutation CreateOneUser($uid: String!, $name: String!, $Role: rb_RoleCreateNestedManyWithoutUserInput!) {
+  data: rb_createOneUser(data: {uid: $uid, name: $name, Role: $Role}) {
+    
+    uid
+    name
+  }
+}

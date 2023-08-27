@@ -1,0 +1,6 @@
+mutation MyQuery($name: String! @fromClaim(name:CUSTOM,custom: {jsonPathComponents: ["key2", "key3"]})) {
+  rb_createOneT(data: {name: $name}) {
+    id
+    name
+  }
+}

@@ -1,0 +1,28 @@
+# Fireboom相关
+fireboom
+fireboom.old
+
+authentication.key
+license.key
+.env
+log/*
+exported/*
+template/*
+
+# nodejs 钩子
+node_modules
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+custom-ts/generated
+
+# golang 钩子
+custom-go/generated
+go.sum
+go.work.sum
+
+# front
+front/src/ts-client/*
+
+
+

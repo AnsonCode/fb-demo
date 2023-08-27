@@ -1,0 +1,40 @@
+{
+	"name": "casdoor",
+	"enabled": true,
+	"createTime": "2023-08-15T18:33:03+08:00",
+	"updateTime": "2023-08-26T12:50:00.664814+08:00",
+	"deleteTime": "",
+	"issuer": {
+		"kind": 0,
+		"staticVariableContent": "https://oidc.100ai.com.cn"
+	},
+	"oidcConfigEnabled": true,
+	"oidcConfig": {
+		"issuer": {
+			"kind": 0,
+			"staticVariableContent": "https://oidc.100ai.com.cn"
+		},
+		"clientId": {
+			"kind": 0,
+			"staticVariableContent": "91619c3ca0a050809417"
+		},
+		"clientSecret": {
+			"kind": 1,
+			"staticVariableContent": "OIDC_CD_SECRET"
+		},
+		"queryParameters": null
+	},
+	"jwksProviderEnabled": true,
+	"jwksProvider": {
+		"jwksUrl": {
+			"kind": 0,
+			"staticVariableContent": "https://oidc.100ai.com.cn/.well-known/jwks"
+		},
+		"jwksJson": null,
+		"userInfoEndpoint": {
+			"kind": 0,
+			"staticVariableContent": "https://oidc.100ai.com.cn/api/userinfo"
+		},
+		"userInfoCacheTtlSeconds": 0
+	}
+}

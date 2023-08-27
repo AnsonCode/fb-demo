@@ -1,0 +1,6 @@
+mutation MyQuery($des: String = null) {
+  rb_updateOneT(data: {des: {set: $des}}, where: {id: 10}) {
+    id
+    des
+  }
+}

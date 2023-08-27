@@ -1,0 +1,7 @@
+query MyQuery($id: Int!  ) {
+  rb_findUniqueT(where: {id: $id}) {
+    des
+    id
+    name
+  }
+}

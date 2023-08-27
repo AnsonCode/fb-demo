@@ -1,0 +1,7 @@
+query GetOneUser($uid: String!) {
+  data: rb_findFirstUser(where: {uid: {equals: $uid}}) {
+    
+    uid
+    name
+  }
+}

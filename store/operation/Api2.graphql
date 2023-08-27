@@ -1,0 +1,7 @@
+query MyQuery {
+  rb_findFirstT {
+    id
+    name
+    des
+  }
+}

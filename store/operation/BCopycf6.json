@@ -1,0 +1,18 @@
+{
+	"enabled": true,
+	"title": "",
+	"remark": "",
+	"createTime": "2023-08-15T18:19:56+08:00",
+	"updateTime": "2023-08-18T18:58:13+08:00",
+	"deleteTime": "",
+	"path": "BCopycf6",
+	"engine": 0,
+	"hooksConfiguration": null,
+	"configCustomized": false,
+	"cacheConfig": null,
+	"liveQueryConfig": {
+		"enabled": true,
+		"pollingIntervalSeconds": 2
+	},
+	"authenticationConfig": null
+}

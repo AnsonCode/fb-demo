@@ -1,0 +1,7 @@
+mutation MyQuery($name: String = "sss", $des: String = "ssss") {
+  rb_createOneT(data: {name: $name, des: $des}) {
+    id
+    des
+    name
+  }
+} 

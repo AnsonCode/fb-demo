@@ -1,0 +1,10 @@
+mutation MyQuery @transaction {
+  rb_createOneT(data: { name: "22211122"}) {
+    id
+    name
+  }
+  rb_createOneRole(data: {code: "a111111", name: "1111"}) {
+    code
+    name
+  }
+} 

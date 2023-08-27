@@ -1,0 +1,3 @@
+query MyQuery {
+  statistic_GetMonthlySales 
+}

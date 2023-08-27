@@ -1,0 +1,21 @@
+query MyQuery {
+  system_getAllRoles_get {
+    code
+    createTime
+    deleteTime
+    remark
+    updateTime
+  }
+  system_getAllPublicApis_get {
+    configCustomized
+    createTime
+    deleteTime
+    enabled
+    engine
+    path
+    operationType
+    remark
+    title
+    updateTime
+  }
+}

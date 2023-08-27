@@ -1,0 +1,16 @@
+{
+  "name": "statistic",
+  "enabled": false,
+  "createTime": "2023-08-17T15:03:26+08:00",
+  "updateTime": "2023-08-27T17:50:23.595141+08:00",
+  "deleteTime": "",
+  "kind": 2,
+  "customRest": null,
+  "customGraphql": {
+    "customized": true,
+    "headers": null,
+    "endpoint": "",
+    "schemaFilepath": ""
+  },
+  "customDatabase": null
+}

@@ -1,0 +1,5 @@
+mutation DeleteManyUser($uids: [String]!) {
+  data: rb_deleteManyUser(where: {uid: {in: $uids}}) {
+    count
+  }
+}

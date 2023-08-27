@@ -1,0 +1,10 @@
+query MyQuery {
+  rb_findFirstUser {
+    name
+    uid
+    Role {
+      code
+      name
+    }
+  }
+}

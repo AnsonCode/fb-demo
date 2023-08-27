@@ -1,0 +1,6 @@
+subscription MyQuery {
+  g1_messageCreated {
+    content
+    id
+  }
+}

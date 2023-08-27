@@ -1,0 +1,15 @@
+{
+	"enabled": true,
+	"title": "",
+	"remark": "",
+	"createTime": "2023-08-19T15:38:44+08:00",
+	"updateTime": "2023-08-19T15:54:21+08:00",
+	"deleteTime": "",
+	"path": "CreateT",
+	"engine": 0,
+	"hooksConfiguration": null,
+	"configCustomized": false,
+	"cacheConfig": null,
+	"liveQueryConfig": null,
+	"authenticationConfig": null
+}

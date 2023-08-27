@@ -1,0 +1,20 @@
+{
+  "name": "ts-client",
+  "enabled": true,
+  "type": "client",
+  "language": "typescript",
+  "extension": ".ts",
+  "gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_ts-client.git",
+  "gitBranch": "V2.0",
+  "gitCommitHash": "216c812d380213704678e0928a2c2025b9101a49",
+  "outputPath": "./front/src/ts-client",
+  "createTime": "2023-08-27T17:36:46.505219+08:00",
+  "updateTime": "2023-08-27T17:37:03.125065+08:00",
+  "deleteTime": "",
+  "generateTime": "2023-08-27T17:36:46.710309803+08:00",
+  "icon": "\u003csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='40px' height='40px'\u003e\u003crect width='36' height='36' x='6' y='6' fill='#1976d2'/\u003e\u003cpolygon fill='#fff' points='27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264'/\u003e\u003cpath fill='#fff' d='M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z'/\u003e\u003c/svg\u003e",
+  "title": "Typescript client",
+  "author": "fireboom",
+  "version": "latest",
+  "description": "Base typescript client"
+}

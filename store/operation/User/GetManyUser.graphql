@@ -1,0 +1,7 @@
+query GetManyUser {
+  data: rb_findManyUser {
+    
+    uid
+    name
+  }
+}

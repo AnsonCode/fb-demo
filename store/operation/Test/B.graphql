@@ -1,0 +1,6 @@
+query MyQuery {
+  rb_findManyRole @transform(get: "REPLACE_ME") {
+    code2
+    name
+  }
+}

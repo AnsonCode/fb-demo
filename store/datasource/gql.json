@@ -1,0 +1,18 @@
+{
+  "name": "gql",
+  "enabled": false,
+  "createTime": "2023-08-19T22:20:43+08:00",
+  "updateTime": "2023-08-19T22:53:53+08:00",
+  "deleteTime": "2023-08-27T17:42:50.456525+08:00",
+  "kind": 2,
+  "customRest": null,
+  "customGraphql": {
+    "customized": false,
+    "headers": {
+      
+    },
+    "endpoint": "https://fireboom-gql.ansoncode.repl.co/graphql",
+    "schemaFilepath": ""
+  },
+  "customDatabase": null
+}

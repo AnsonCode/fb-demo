@@ -1,0 +1,10 @@
+query MyQuery($skip: Int = 0 @jsonSchema(maxItems)) {
+  rb_findManyUser(skip: $skip, take: 10) {
+    uid
+    name
+    roles: Role {
+      code
+      name
+    }
+  }
+}

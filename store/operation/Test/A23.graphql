@@ -1,0 +1,10 @@
+query MyQuery @rbac(requireMatchAny: [admin]) {
+  rb_findManyUser {
+    name
+    uid
+    Role {
+      code
+      name
+    }
+  }
+}

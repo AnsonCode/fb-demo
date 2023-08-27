@@ -1,0 +1,40 @@
+{
+	"name": "auth0",
+	"enabled": true,
+	"createTime": "2023-08-15T18:26:32+08:00",
+	"updateTime": "2023-08-26T12:41:49.331969+08:00",
+	"deleteTime": "",
+	"issuer": {
+		"kind": 0,
+		"staticVariableContent": "https://dev-5kzk7gzc.us.auth0.com"
+	},
+	"oidcConfigEnabled": true,
+	"oidcConfig": {
+		"issuer": {
+			"kind": 0,
+			"staticVariableContent": "https://dev-5kzk7gzc.us.auth0.com"
+		},
+		"clientId": {
+			"kind": 0,
+			"staticVariableContent": "LA9iEH6zGvgfBz2vYl7ftP1bikUS3cIS"
+		},
+		"clientSecret": {
+			"kind": 1,
+			"staticVariableContent": "AUTH0_SECRET"
+		},
+		"queryParameters": null
+	},
+	"jwksProviderEnabled": true,
+	"jwksProvider": {
+		"jwksUrl": {
+			"kind": 0,
+			"staticVariableContent": "https://dev-5kzk7gzc.us.auth0.com/.well-known/jwks.json"
+		},
+		"jwksJson": null,
+		"userInfoEndpoint": {
+			"kind": 0,
+			"staticVariableContent": "https://dev-5kzk7gzc.us.auth0.com/userinfo"
+		},
+		"userInfoCacheTtlSeconds": 0
+	}
+}

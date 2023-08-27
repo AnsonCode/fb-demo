@@ -1,0 +1,16 @@
+query GetUserList($take: Int = 10, $skip: Int = 0, $orderBy: [rb_UserOrderByWithRelationInput], $query: rb_UserWhereInput) {
+  data: rb_findManyUser(
+    skip: $skip
+    take: $take
+  orderBy: $orderBy
+    where: {AND: $query}) {
+    
+    uid
+    name
+  }
+  total: rb_aggregateUser(where: {AND: $query}) @transform(get: "_count.uid") {
+    _count {
+      uid
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"enabled": true,
+	"title": "",
+	"remark": "",
+	"createTime": "2023-08-20T11:05:43+08:00",
+	"updateTime": "2023-08-20T11:07:13+08:00",
+	"deleteTime": "",
+	"path": "FindUser",
+	"engine": 0,
+	"hooksConfiguration": null,
+	"configCustomized": false,
+	"cacheConfig": null,
+	"liveQueryConfig": null,
+	"authenticationConfig": null
+}

@@ -1,0 +1,42 @@
+#
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+) on FIELD_DEFINITION | OBJECT | INTERFACE
+
+
+#
+type Query {
+  #
+  messages: [Message!]!
+
+  #
+  deatail(title: String!): String
+}
+
+#
+type Message {
+  #
+  id: String
+
+  #
+  content: String
+}
+
+#
+type Subscription {
+  #
+  messageCreated: Message
+}
+
+#
+enum CacheControlScope {
+  #
+  PUBLIC
+
+  #
+  PRIVATE
+}
+
+# The `Upload` scalar type represents a file upload.
+scalar Upload

@@ -1,0 +1,10 @@
+mutation UpdateOneUser($uid: String!, $name: String, $Role: rb_RoleWhereUniqueInput) {
+  data: rb_updateOneUser(
+    data: {name: {set: $name}, Role: {set: $Role}}
+    where: {uid: $uid}
+  ) {
+    
+    uid
+    name
+  }
+}
