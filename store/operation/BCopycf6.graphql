@@ -1,7 +1,0 @@
-query MyQuery {
-  rb_findManyRole {
-    code
-    name
-    
-  }
-}

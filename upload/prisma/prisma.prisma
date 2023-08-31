@@ -1,0 +1,31 @@
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:123456@localhost:3306/rbac"
+}
+
+model Permission {
+  id            Int    @id @default(autoincrement())
+  name          String @unique
+  operationPath String @unique
+  operationId   BigInt @unique
+  Role          Role[]
+}
+
+model Role {
+  code       String       @id
+  name       String
+  Permission Permission[]
+  User       User[]
+}
+model User {
+  uid  String @id
+  name String
+  Role Role[]
+}
+
+model post {
+  id      Int    @id @default(autoincrement())
+  content String
+  cate    String
+}

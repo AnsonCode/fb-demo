@@ -56,3 +56,40 @@ chmod 777 start-mysql.sh
 
 ```
 https://blog.csdn.net/qq_35893120/article/details/118360429
+
+
+chmod 777 update.sh
+
+
+env如何复制上去
+
+```
+AUTH0_SECRET="xxxxx"
+# 数据库URL
+DB_RBAC_URL="mysql://root:123456@localhost:3306/rbac"
+FB_API_INTERNAL_URL="http://localhost:9991"
+FB_API_LISTEN_HOST="localhost"
+FB_API_LISTEN_PORT=9991
+# 外网地址，启动后去控制台修改
+FB_API_PUBLIC_URL="http://localhost:9991"
+FB_CSRF_TOKEN_SECRET="XgloxMqlZQD"
+FB_LOG_LEVEL="debug"
+FB_SECURE_COOKIE_BLOCK_KEY="fJkYInBRWRiGlflRKJeMsSpGSHEvJthk"
+FB_SECURE_COOKIE_HASH_KEY="sHwzzwQBZUOQQGbdvcSQxUXsPMzuJGmh"
+FB_SERVER_LISTEN_HOST="localhost"
+FB_SERVER_LISTEN_PORT=9992
+FB_SERVER_URL="http://localhost:9992"
+OIDC_CD_SECRET="XXXXXX"
+S3_TX_SECRET="XXXX"
+prismaEngineVersion="694eea289a8462c80264df36757e4fdc129b1b32"
+prismaVersion="3.13.0"
+```
+
+设置->系统 API外网地址
+expert-space-acorn-pjx5rw9r7jrhrgg4-9991.app.github.dev
+- 环境变量设置：FB_API_PUBLIC_URL
+- 静态值设置
+
+9991和5173 端口设置为公开
+
+

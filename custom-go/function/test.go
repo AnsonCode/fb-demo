@@ -7,9 +7,7 @@ import (
 )
 
 func init() {
-	plugins.RegisterFunction[loginReq2, loginRes2](test2, &plugins.HookConfig{
-		OperationType: wgpb.OperationType_MUTATION,
-	})
+	plugins.RegisterFunction[loginReq2, loginRes2](test2, wgpb.OperationType_MUTATION)
 }
 
 type loginReq2 struct {

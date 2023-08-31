@@ -27,8 +27,8 @@ func init() {
 
             },
             Authentication: plugins.AuthenticationConfiguration{
-                MutatingPostAuthentication: authentication.MutatingPostAuthentication,
                 PostAuthentication: authentication.PostAuthentication,
+                MutatingPostAuthentication: authentication.MutatingPostAuthentication,
             },
             Queries: base.OperationHooks{
                 "GetT": {

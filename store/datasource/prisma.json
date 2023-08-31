@@ -1,18 +1,18 @@
 {
-  "name": "blog",
+  "name": "prisma",
   "enabled": false,
-  "createTime": "2023-08-23T19:10:27+08:00",
-  "updateTime": "2023-08-31T14:23:43.8201+08:00",
+  "createTime": "2023-08-31T14:23:03.162474+08:00",
+  "updateTime": "2023-08-31T14:31:59.594517+08:00",
   "deleteTime": "",
   "cacheEnabled": false,
-  "kind": 7,
+  "kind": 8,
   "customRest": null,
   "customGraphql": null,
   "customDatabase": {
     "kind": 0,
     "databaseUrl": {
       "kind": 0,
-      "staticVariableContent": "sqlite1.db"
+      "staticVariableContent": "prisma.prisma"
     },
     "databaseAlone": null
   }

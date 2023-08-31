@@ -1,7 +1,0 @@
-mutation MyQuery {
-  rb_createOneT(data: {name: "A未付款", des: ""}) {
-    des
-    id
-    name
-  }
-}

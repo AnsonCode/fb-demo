@@ -14,8 +14,7 @@ import (
 
 type httpProxyHookFunction func(*base.HttpTransportHookRequest, *HttpTransportBody) (*base.ClientResponse, error)
 
-func RegisterProxyHook(hookFunc httpProxyHookFunction, conf ...*HookConfig) {
-
+func RegisterProxyHook(hookFunc httpProxyHookFunction, operationType ...wgpb.OperationType) {
 	callerName := utils.GetCallerName(consts.PROXY)
 	apiPrefixPath := "/" + consts.PROXY
 	apiPath := path.Join(apiPrefixPath, callerName)
@@ -26,14 +25,20 @@ func RegisterProxyHook(hookFunc httpProxyHookFunction, conf ...*HookConfig) {
 	})
 
 	base.AddHealthFunc(func(e *echo.Echo, s string, report *base.HealthReport) {
-		// 生成 operation 声明文件  proxy/xxx.json
-		operation := &wgpb.Operation{
-			Name: callerName,
-			Path: apiPath,
+		operation := &wgpb.Operation{}
+		operationJsonPath := filepath.Join(consts.PROXY, callerName) + consts.JSON_EXT
+
+		// 读文件，保留原有配置，只需更新schema
+		if !utils.NotExistFile(operationJsonPath) {
+			utils.ReadStructAndCacheFile(operationJsonPath, operation)
+		} else {
+			operation.Name = callerName
+			operation.Path = apiPath
+			operation.OperationType = wgpb.OperationType_MUTATION
 		}
-		if len(conf) > 0 && conf[0] != nil {
-			operation.AuthenticationConfig = &wgpb.OperationAuthenticationConfig{AuthRequired: conf[0].AuthRequired}
-			operation.AuthorizationConfig = conf[0].AuthorizationConfig
+
+		if operationType != nil && len(operationType) > 0 {
+			operation.OperationType = operationType[0]
 		}
 
 		operationBytes, err := json.Marshal(operation)
@@ -41,12 +46,14 @@ func RegisterProxyHook(hookFunc httpProxyHookFunction, conf ...*HookConfig) {
 			e.Logger.Errorf("json marshal failed, err: %v", err.Error())
 			return
 		}
-		err = os.WriteFile(filepath.Join(consts.PROXY, callerName)+consts.JSON_EXT, operationBytes, 0644)
+		err = os.WriteFile(operationJsonPath, operationBytes, 0644)
 		if err != nil {
 			e.Logger.Errorf("write file failed, err: %v", err.Error())
 			return
 		}
 
+		report.Lock()
+		defer report.Unlock()
 		report.Proxys = append(report.Proxys, callerName)
 	})
 }
